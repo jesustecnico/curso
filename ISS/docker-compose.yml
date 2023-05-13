@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
+    container_name: iis-web
+    ports:
+      - "90:80"
+    restart: always
