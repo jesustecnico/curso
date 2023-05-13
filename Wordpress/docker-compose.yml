@@ -16,7 +16,7 @@ services:
       - c:/docker/configuracion/db-wordpress:/var/www/html
 
   db:
-    container_name: Wordpress-db
+    container_name: db-wordpress
     image: mysql:5.7
     restart: always
     environment:
