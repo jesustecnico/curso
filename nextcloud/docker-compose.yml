@@ -6,7 +6,7 @@ volumes:
 
 services:
   db:
-     container_name: Nextcloud-db
+    container_name: Nextcloud-db
     image: mariadb:10.6
     restart: always
     command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
