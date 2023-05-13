@@ -2,10 +2,11 @@ version: '3.1'
 services:
 
   wordpress:
+    container_name: Wordpress
     image: wordpress
     restart: always
     ports:
-      - 80:80
+      - 90:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
@@ -15,6 +16,7 @@ services:
       - c:/docker/configuracion/wordpress:/var/www/html
 
   db:
+    container_name: Wordpress-db
     image: mysql:5.7
     restart: always
     environment:
