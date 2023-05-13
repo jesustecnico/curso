@@ -6,6 +6,4 @@ services:
     container_name: iis-web
     ports:
       - "80:80"
-    volumes:
-      - ./web-content:C:/inetpub/wwwroot
     restart: always
