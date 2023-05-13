@@ -1,9 +1,4 @@
 version: '2'
-
-volumes:
-  nextcloud:
-  db:
-
 services:
   db:
     container_name: Nextcloud-db
@@ -19,7 +14,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-     container_name: Nextcloud
+    container_name: Nextcloud
     image: nextcloud
     restart: always
     ports:
