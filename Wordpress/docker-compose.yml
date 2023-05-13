@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
     volumes:
-      - c:/docker/configuracion/wordpress:/var/www/html
+      - c:/docker/configuracion/db-wordpress:/var/www/html
 
   db:
     container_name: Wordpress-db
